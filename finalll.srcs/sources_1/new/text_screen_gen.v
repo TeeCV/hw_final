@@ -56,11 +56,12 @@ module text_screen_gen(
     debounce_chu db_right(.clk(clk), .reset(reset), .sw(right), .db_level(), .db_tick(move_xr_tick));
     
     singlePulser set_pul(d,set,clk);
+    singlePulser reset_pull(r,reset,clk);
     // instantiate the ascii / font rom
     ascii_rom a_rom(.clk(clk), .addr(rom_addr), .data(font_word));
     // instantiate dual-port video RAM (2^12-by-7)
     dual_port_ram dp_ram(.clk(clk), .we(we), .addr_a(addr_w), .addr_b(addr_r),
-                         .din_a(din), .dout_a(), .dout_b(dout));
+                         .din_a(din), .dout_a(), .dout_b(dout), .reset(r));
     
     // registers
     always @(posedge clk or posedge reset)
@@ -97,7 +98,7 @@ module text_screen_gen(
     assign ascii_bit = font_word[~bit_addr];
     // new cursor position
     
-    assign cur_x_next = ((d==1  &&  (cur_x_reg == MAX_X - 1)) || ((move_xr_tick || d) && (cur_x_reg == MAX_X - 1)) || (move_xl_tick && (cur_x_reg == 0))) ? 0 :    
+    assign cur_x_next = (move_yd_tick || (d==1  &&  (cur_x_reg == MAX_X - 1)) || ((move_xr_tick || d) && (cur_x_reg == MAX_X - 1)) || (move_xl_tick && (cur_x_reg == 0))) ? 0 :    
                         (move_xr_tick || (d == 1 && (cur_x_reg < MAX_X - 1))) ? cur_x_reg + 1 :    // move right
                         (move_xl_tick) ? cur_x_reg - 1 :    // move left
                         cur_x_reg;                          // no move

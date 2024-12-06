@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Dec  6 06:41:31 2024
-# Process ID: 8820
+# Start of session at: Fri Dec  6 23:18:39 2024
+# Process ID: 30744
 # Current directory: C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.runs/synth_1/top.vds
@@ -15,9 +15,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21536 
+INFO: Helper process launched with PID 31776 
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/dual_port_ram.v:52]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 432.160 ; gain = 98.316
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 446.250 ; gain = 113.055
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/top.v:3]
 INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/uart.v:23]
@@ -61,12 +62,12 @@ INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (8#1) [C:/Users/Chayod
 INFO: [Synth 8-6157] synthesizing module 'dual_port_ram' [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/dual_port_ram.v:23]
 	Parameter DATA_SIZE bound to: 8 - type: integer 
 	Parameter ADDR_SIZE bound to: 14 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/dual_port_ram.v:37]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/dual_port_ram.v:38]
 INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram' (9#1) [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/dual_port_ram.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'text_screen_gen' (10#1) [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/text_screen_gen.v:11]
 INFO: [Synth 8-6155] done synthesizing module 'top' (11#1) [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/top.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 510.102 ; gain = 176.258
+Finished RTL Elaboration : Time (s): cpu = 00:04:35 ; elapsed = 00:05:00 . Memory (MB): peak = 1710.695 ; gain = 1377.500
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -79,10 +80,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 510.102 ; gain = 176.258
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:50 ; elapsed = 00:05:17 . Memory (MB): peak = 1710.695 ; gain = 1377.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 510.102 ; gain = 176.258
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:50 ; elapsed = 00:05:17 . Memory (MB): peak = 1710.695 ; gain = 1377.500
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -93,30 +94,31 @@ Parsing XDC File [C:/Users/Chayodom/Desktop/Basys-3-Master.xdc]
 Finished Parsing XDC File [C:/Users/Chayodom/Desktop/Basys-3-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Chayodom/Desktop/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.047 . Memory (MB): peak = 2318.141 ; gain = 1.137
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.301 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2323.566 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.301 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 798.301 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2323.566 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.250 . Memory (MB): peak = 2323.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 798.637 ; gain = 464.793
+Finished Constraint Validation : Time (s): cpu = 00:05:39 ; elapsed = 00:06:12 . Memory (MB): peak = 2324.805 ; gain = 1991.609
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 798.637 ; gain = 464.793
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:39 ; elapsed = 00:06:12 . Memory (MB): peak = 2324.805 ; gain = 1991.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 798.637 ; gain = 464.793
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:40 ; elapsed = 00:06:12 . Memory (MB): peak = 2324.805 ; gain = 1991.609
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "receiving0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
@@ -129,8 +131,103 @@ INFO: [Synth 8-5546] ROM "db_tick" won't be mapped to RAM because it is too spar
 INFO: [Synth 8-5544] ROM "db_level" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/text_screen_gen.v:101]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/text_screen_gen.v:106]
+INFO: [Synth 8-5546] ROM "ram_reg[16383]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16382]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16381]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16380]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16379]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16378]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16377]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16376]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16375]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16374]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16373]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16372]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16371]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16370]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16369]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16368]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16367]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16366]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16365]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16364]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16363]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16362]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16361]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16360]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16359]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16358]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16357]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16356]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16355]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16354]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16353]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16352]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16351]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16350]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16349]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16348]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16347]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16346]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16345]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16344]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16343]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16342]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16341]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16340]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16339]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16338]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16337]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16336]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16335]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16334]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16333]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16332]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16331]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16330]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16329]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16328]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16327]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16326]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16325]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16324]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16323]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16322]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16321]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16320]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16319]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16318]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16317]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16316]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16315]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16314]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16313]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16312]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16311]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16310]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16309]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16308]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16307]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16306]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16305]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16304]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16303]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16302]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16301]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16300]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16299]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16298]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16297]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16296]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16295]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16294]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16293]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16292]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16291]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16290]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/text_screen_gen.v:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/text_screen_gen.v:107]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -140,16 +237,35 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
                    wait0 |                               11 |                               01
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'debounce_chu'
-INFO: [Synth 8-6430] The Block RAM ram_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 798.637 ; gain = 464.793
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:16:53 ; elapsed = 00:18:50 . Memory (MB): peak = 2324.805 ; gain = 1991.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |muxpart__16405_dual_port_ram |           1|    131064|
+|2     |reg__11874_dual_port_ram     |           1|         8|
+|3     |dual_port_ram__GB2           |           1|     22176|
+|4     |muxpart__16404_dual_port_ram |           1|    131064|
+|5     |reg__10088_dual_port_ram     |           1|         8|
+|6     |dual_port_ram__GB5           |           1|     22174|
+|7     |dual_port_ram__GB6           |           1|     19164|
+|8     |dual_port_ram__GB7           |           1|     19152|
+|9     |dual_port_ram__GB8           |           1|     19174|
+|10    |dual_port_ram__GB9           |           1|     19152|
+|11    |dual_port_ram__GB10          |           1|     35107|
+|12    |dual_port_ram__GB11          |           1|     37323|
+|13    |dual_port_ram__GB12          |           1|     37471|
+|14    |dual_port_ram__GB13          |           1|     34079|
+|15    |dual_port_ram__GB14          |           1|     46499|
+|16    |dual_port_ram__GB15          |           1|     46263|
+|17    |dual_port_ram__GB16          |           1|     46445|
+|18    |dual_port_ram__GB17          |           1|     46945|
+|19    |text_screen_gen__GC0         |           1|      4822|
+|20    |top__GC0                     |           1|       924|
++------+-----------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -166,26 +282,24 @@ Detailed RTL Component Info :
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 2     
 	               10 Bit    Registers := 10    
-	                8 Bit    Registers := 8     
+	                8 Bit    Registers := 16392 
 	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 24    
-+---RAMs : 
-	             128K Bit         RAMs := 1     
+	                1 Bit    Registers := 26    
 +---Muxes : 
 	   4 Input     21 Bit        Muxes := 4     
-	  10 Input      8 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 2     
 	2977 Input      8 Bit        Muxes := 1     
 	   5 Input      8 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
 	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 4     
 	   2 Input      2 Bit        Muxes := 13    
-	   2 Input      1 Bit        Muxes := 25    
+	   2 Input      1 Bit        Muxes := 16409 
+	   4 Input      1 Bit        Muxes := 16    
 	  10 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 14    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -197,6 +311,127 @@ Module top
 Detailed RTL Component Info : 
 +---Registers : 
 	               12 Bit    Registers := 1     
+Module dual_port_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 2     
+	                8 Bit    Registers := 16384 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16384 
+Module debounce_chu__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     21 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module debounce_chu__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     21 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module debounce_chu__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     21 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module debounce_chu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     21 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module singlePulser__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module singlePulser 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module ascii_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	2977 Input      8 Bit        Muxes := 1     
+Module text_screen_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module baudrate_gen__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module uart_rx__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_tx__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 2     
+Module uart__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
 Module baudrate_gen 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -241,51 +476,6 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 2     
-Module debounce_chu 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     21 Bit       Adders := 1     
-+---Registers : 
-	               21 Bit    Registers := 1     
-+---Muxes : 
-	   4 Input     21 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 3     
-Module singlePulser 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   4 Input      1 Bit        Muxes := 2     
-Module ascii_rom 
-Detailed RTL Component Info : 
-+---Registers : 
-	               12 Bit    Registers := 1     
-+---Muxes : 
-	2977 Input      8 Bit        Muxes := 1     
-Module dual_port_ram 
-Detailed RTL Component Info : 
-+---Registers : 
-	               14 Bit    Registers := 2     
-+---RAMs : 
-	             128K Bit         RAMs := 1     
-Module text_screen_gen 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
-+---Registers : 
-	               10 Bit    Registers := 4     
-	                7 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
-+---Muxes : 
-	   5 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -301,105 +491,215 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5544] ROM "vga/w_25MHz" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "uart1/receiver/receiving0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "uart1/receiver/data_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "uart1/transmitter/sending0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "uart1/transmitter/bit_out0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "uart2/receiver/receiving0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "uart2/receiver/data_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "uart2/transmitter/sending0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "uart2/transmitter/bit_out0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "vga/v_count_next" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "tsg/db_left/db_tick" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "tsg/db_up/db_tick" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "tsg/db_down/db_tick" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "tsg/db_right/db_tick" won't be mapped to RAM because it is too sparse
-RAM Pipeline Warning: Read Address Register Found For RAM tsg/dp_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
-RAM Pipeline Warning: Read Address Register Found For RAM tsg/dp_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
-INFO: [Synth 8-6430] The Block RAM tsg/dp_ram/ram_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
-RAM Pipeline Warning: Read Address Register Found For RAM tsg/dp_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
-INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[0]' (FDE) to 'rgb_reg_reg[1]'
-INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[1]' (FDE) to 'rgb_reg_reg[2]'
-INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[2]' (FDE) to 'rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[3]' (FDE) to 'rgb_reg_reg[8]'
-INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[4]' (FDE) to 'rgb_reg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[5]' (FDE) to 'rgb_reg_reg[6]'
-INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[6]' (FDE) to 'rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[8]' (FDE) to 'rgb_reg_reg[9]'
-INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[9]' (FDE) to 'rgb_reg_reg[10]'
-INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[10]' (FDE) to 'rgb_reg_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rgb_reg_reg[11] )
+INFO: [Synth 8-3886] merging instance 'i_0/rgb_reg_reg[0]' (FDE) to 'i_0/rgb_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/rgb_reg_reg[1]' (FDE) to 'i_0/rgb_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rgb_reg_reg[2]' (FDE) to 'i_0/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/rgb_reg_reg[3]' (FDE) to 'i_0/rgb_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/rgb_reg_reg[4]' (FDE) to 'i_0/rgb_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/rgb_reg_reg[5]' (FDE) to 'i_0/rgb_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/rgb_reg_reg[6]' (FDE) to 'i_0/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rgb_reg_reg[8]' (FDE) to 'i_0/rgb_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/rgb_reg_reg[9]' (FDE) to 'i_0/rgb_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/rgb_reg_reg[10]' (FDE) to 'i_0/rgb_reg_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\rgb_reg_reg[11] )
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 798.637 ; gain = 464.793
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:20:36 ; elapsed = 00:23:05 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Block RAM: Preliminary Mapping  Report (see note below)
-+---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name    | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|dual_port_ram: | ram_reg    | 16 K x 8(WRITE_FIRST)  |   | R | 16 K x 8(WRITE_FIRST)  | W | R | Port A and B     | 0      | 4      | 
-+---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-
-Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-INFO: [Synth 8-4652] Swapped enable and write-enable on 4 RAM instances of RAM tsg/dp_ram/ram_reg to conserve power
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |muxpart__16405_dual_port_ram |           1|    131064|
+|2     |reg__11874_dual_port_ram     |           1|         8|
+|3     |dual_port_ram__GB2           |           1|     22176|
+|4     |muxpart__16404_dual_port_ram |           1|    131064|
+|5     |reg__10088_dual_port_ram     |           1|         8|
+|6     |dual_port_ram__GB5           |           1|     22174|
+|7     |dual_port_ram__GB6           |           1|     19164|
+|8     |dual_port_ram__GB7           |           1|     19152|
+|9     |dual_port_ram__GB8           |           1|     19169|
+|10    |dual_port_ram__GB9           |           1|     19152|
+|11    |dual_port_ram__GB10          |           1|      7088|
+|12    |dual_port_ram__GB11          |           1|      4358|
+|13    |dual_port_ram__GB12          |           1|      4533|
+|14    |dual_port_ram__GB13          |           1|      9787|
+|15    |dual_port_ram__GB14          |           1|      5594|
+|16    |dual_port_ram__GB15          |           1|      4735|
+|17    |dual_port_ram__GB16          |           1|      5706|
+|18    |dual_port_ram__GB17          |           1|      5924|
+|19    |text_screen_gen__GC0         |           1|      3842|
+|20    |top__GC0                     |           1|       582|
++------+-----------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 830.254 ; gain = 496.410
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:20:51 ; elapsed = 00:23:23 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'dp_rami_10/addr_b_reg_reg[12]' (FD) to 'dp_rami_10/addr_b_reg_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_10/\addr_b_reg_reg[13] )
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16383][0]' (FDCE) to 'dp_rami_12/ram_reg[16382][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16383][1]' (FDCE) to 'dp_rami_12/ram_reg[16382][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16383][2]' (FDCE) to 'dp_rami_12/ram_reg[16382][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16383][3]' (FDCE) to 'dp_rami_12/ram_reg[16382][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16383][4]' (FDCE) to 'dp_rami_12/ram_reg[16382][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16383][5]' (FDCE) to 'dp_rami_12/ram_reg[16382][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16383][6]' (FDCE) to 'dp_rami_12/ram_reg[16382][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16383][7]' (FDCE) to 'dp_rami_12/ram_reg[16382][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16382][0]' (FDCE) to 'dp_rami_12/ram_reg[16380][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16382][1]' (FDCE) to 'dp_rami_12/ram_reg[16380][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16382][2]' (FDCE) to 'dp_rami_12/ram_reg[16380][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16382][3]' (FDCE) to 'dp_rami_12/ram_reg[16380][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16382][4]' (FDCE) to 'dp_rami_12/ram_reg[16380][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16382][5]' (FDCE) to 'dp_rami_12/ram_reg[16380][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16382][6]' (FDCE) to 'dp_rami_12/ram_reg[16380][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16382][7]' (FDCE) to 'dp_rami_12/ram_reg[16380][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16381][0]' (FDCE) to 'dp_rami_12/ram_reg[16380][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16381][1]' (FDCE) to 'dp_rami_12/ram_reg[16380][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16381][2]' (FDCE) to 'dp_rami_12/ram_reg[16380][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16381][3]' (FDCE) to 'dp_rami_12/ram_reg[16380][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16381][4]' (FDCE) to 'dp_rami_12/ram_reg[16380][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16381][5]' (FDCE) to 'dp_rami_12/ram_reg[16380][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16381][6]' (FDCE) to 'dp_rami_12/ram_reg[16380][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16381][7]' (FDCE) to 'dp_rami_12/ram_reg[16380][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16380][0]' (FDCE) to 'dp_rami_12/ram_reg[16378][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16380][1]' (FDCE) to 'dp_rami_12/ram_reg[16378][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16380][2]' (FDCE) to 'dp_rami_12/ram_reg[16378][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16380][3]' (FDCE) to 'dp_rami_12/ram_reg[16378][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16380][4]' (FDCE) to 'dp_rami_12/ram_reg[16378][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16380][5]' (FDCE) to 'dp_rami_12/ram_reg[16378][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16380][6]' (FDCE) to 'dp_rami_12/ram_reg[16378][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16380][7]' (FDCE) to 'dp_rami_12/ram_reg[16378][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16379][0]' (FDCE) to 'dp_rami_12/ram_reg[16378][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16379][1]' (FDCE) to 'dp_rami_12/ram_reg[16378][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16379][2]' (FDCE) to 'dp_rami_12/ram_reg[16378][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16379][3]' (FDCE) to 'dp_rami_12/ram_reg[16378][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16379][4]' (FDCE) to 'dp_rami_12/ram_reg[16378][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16379][5]' (FDCE) to 'dp_rami_12/ram_reg[16378][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16379][6]' (FDCE) to 'dp_rami_12/ram_reg[16378][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16379][7]' (FDCE) to 'dp_rami_12/ram_reg[16378][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16378][0]' (FDCE) to 'dp_rami_12/ram_reg[16376][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16378][1]' (FDCE) to 'dp_rami_12/ram_reg[16376][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16378][2]' (FDCE) to 'dp_rami_12/ram_reg[16376][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16378][3]' (FDCE) to 'dp_rami_12/ram_reg[16376][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16378][4]' (FDCE) to 'dp_rami_12/ram_reg[16376][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16378][5]' (FDCE) to 'dp_rami_12/ram_reg[16376][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16378][6]' (FDCE) to 'dp_rami_12/ram_reg[16376][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16378][7]' (FDCE) to 'dp_rami_12/ram_reg[16376][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16377][0]' (FDCE) to 'dp_rami_12/ram_reg[16376][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16377][1]' (FDCE) to 'dp_rami_12/ram_reg[16376][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16377][2]' (FDCE) to 'dp_rami_12/ram_reg[16376][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16377][3]' (FDCE) to 'dp_rami_12/ram_reg[16376][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16377][4]' (FDCE) to 'dp_rami_12/ram_reg[16376][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16377][5]' (FDCE) to 'dp_rami_12/ram_reg[16376][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16377][6]' (FDCE) to 'dp_rami_12/ram_reg[16376][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16377][7]' (FDCE) to 'dp_rami_12/ram_reg[16376][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16376][0]' (FDCE) to 'dp_rami_12/ram_reg[16374][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16376][1]' (FDCE) to 'dp_rami_12/ram_reg[16374][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16376][2]' (FDCE) to 'dp_rami_12/ram_reg[16374][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16376][3]' (FDCE) to 'dp_rami_12/ram_reg[16374][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16376][4]' (FDCE) to 'dp_rami_12/ram_reg[16374][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16376][5]' (FDCE) to 'dp_rami_12/ram_reg[16374][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16376][6]' (FDCE) to 'dp_rami_12/ram_reg[16374][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16376][7]' (FDCE) to 'dp_rami_12/ram_reg[16374][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16375][0]' (FDCE) to 'dp_rami_12/ram_reg[16374][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16375][1]' (FDCE) to 'dp_rami_12/ram_reg[16374][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16375][2]' (FDCE) to 'dp_rami_12/ram_reg[16374][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16375][3]' (FDCE) to 'dp_rami_12/ram_reg[16374][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16375][4]' (FDCE) to 'dp_rami_12/ram_reg[16374][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16375][5]' (FDCE) to 'dp_rami_12/ram_reg[16374][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16375][6]' (FDCE) to 'dp_rami_12/ram_reg[16374][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16375][7]' (FDCE) to 'dp_rami_12/ram_reg[16374][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16374][0]' (FDCE) to 'dp_rami_12/ram_reg[16372][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16374][1]' (FDCE) to 'dp_rami_12/ram_reg[16372][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16374][2]' (FDCE) to 'dp_rami_12/ram_reg[16372][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16374][3]' (FDCE) to 'dp_rami_12/ram_reg[16372][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16374][4]' (FDCE) to 'dp_rami_12/ram_reg[16372][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16374][5]' (FDCE) to 'dp_rami_12/ram_reg[16372][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16374][6]' (FDCE) to 'dp_rami_12/ram_reg[16372][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16374][7]' (FDCE) to 'dp_rami_12/ram_reg[16372][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16373][0]' (FDCE) to 'dp_rami_12/ram_reg[16372][0]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16373][1]' (FDCE) to 'dp_rami_12/ram_reg[16372][1]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16373][2]' (FDCE) to 'dp_rami_12/ram_reg[16372][2]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16373][3]' (FDCE) to 'dp_rami_12/ram_reg[16372][3]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16373][4]' (FDCE) to 'dp_rami_12/ram_reg[16372][4]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16373][5]' (FDCE) to 'dp_rami_12/ram_reg[16372][5]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16373][6]' (FDCE) to 'dp_rami_12/ram_reg[16372][6]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16373][7]' (FDCE) to 'dp_rami_12/ram_reg[16372][7]'
+INFO: [Synth 8-3886] merging instance 'dp_rami_12/ram_reg[16372][0]' (FDCE) to 'dp_rami_12/ram_reg[16370][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_12/\ram_reg[15554][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_12/\ram_reg[15554][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_12/\ram_reg[15554][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_12/\ram_reg[15554][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_12/\ram_reg[15554][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_12/\ram_reg[15554][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_12/\ram_reg[15554][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_12/\ram_reg[15554][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_9/\ram_reg[9302][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_9/\ram_reg[9302][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_9/\ram_reg[9302][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_9/\ram_reg[9302][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_9/\ram_reg[9302][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_9/\ram_reg[9302][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_9/\ram_reg[9302][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_9/\ram_reg[9302][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_7/\ram_reg[8022][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_7/\ram_reg[8022][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_7/\ram_reg[8022][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_7/\ram_reg[8022][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_7/\ram_reg[8022][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_7/\ram_reg[8022][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_7/\ram_reg[8022][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp_rami_7/\ram_reg[8022][7] )
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 971.602 ; gain = 637.758
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Block RAM: Final Mapping  Report
-+---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name    | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|dual_port_ram: | ram_reg    | 16 K x 8(WRITE_FIRST)  |   | R | 16 K x 8(WRITE_FIRST)  | W | R | Port A and B     | 0      | 4      | 
-+---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Timing Optimization : Time (s): cpu = 00:24:31 ; elapsed = 00:27:29 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |dual_port_ram__GB2  |           1|      6328|
+|2     |dual_port_ram__GB6  |           1|     12076|
+|3     |dual_port_ram__GB7  |           1|      8512|
+|4     |dual_port_ram__GB8  |           1|      3024|
+|5     |dual_port_ram__GB9  |           1|      2832|
+|6     |dual_port_ram__GB14 |           1|      2321|
+|7     |dual_port_ram__GB16 |           1|      3843|
+|8     |dual_port_ram__GB17 |           1|      3875|
+|9     |top_GT0             |           1|     31816|
+|10    |top_GT1             |           1|      5630|
++------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 972.641 ; gain = 638.797
+Finished Technology Mapping : Time (s): cpu = 00:24:46 ; elapsed = 00:27:53 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |dual_port_ram__GB2  |           1|      6328|
+|2     |dual_port_ram__GB6  |           1|     12076|
+|3     |dual_port_ram__GB7  |           1|      8512|
+|4     |dual_port_ram__GB8  |           1|      3024|
+|5     |dual_port_ram__GB9  |           1|      2832|
+|6     |dual_port_ram__GB14 |           1|      1204|
+|7     |dual_port_ram__GB16 |           1|      2010|
+|8     |dual_port_ram__GB17 |           1|      1972|
+|9     |top_GT0             |           1|     14353|
+|10    |top_GT1             |           1|      2628|
++------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -416,7 +716,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 972.641 ; gain = 638.797
+Finished IO Insertion : Time (s): cpu = 00:24:54 ; elapsed = 00:28:04 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -429,7 +729,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 972.641 ; gain = 638.797
+Finished Renaming Generated Instances : Time (s): cpu = 00:24:55 ; elapsed = 00:28:05 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -441,25 +741,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 972.641 ; gain = 638.797
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:25:00 ; elapsed = 00:28:11 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 972.641 ; gain = 638.797
+Finished Renaming Generated Ports : Time (s): cpu = 00:25:00 ; elapsed = 00:28:11 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 972.641 ; gain = 638.797
+Finished Handling Custom Attributes : Time (s): cpu = 00:25:01 ; elapsed = 00:28:12 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 972.641 ; gain = 638.797
+Finished Renaming Generated Nets : Time (s): cpu = 00:25:01 ; elapsed = 00:28:12 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -472,71 +772,73 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----------+------+
-|      |Cell       |Count |
-+------+-----------+------+
-|1     |BUFG       |     3|
-|2     |CARRY4     |    22|
-|3     |LUT1       |    93|
-|4     |LUT2       |   170|
-|5     |LUT3       |   115|
-|6     |LUT4       |   163|
-|7     |LUT5       |   117|
-|8     |LUT6       |   630|
-|9     |MUXF7      |    14|
-|10    |MUXF8      |     2|
-|11    |RAMB36E1_1 |     4|
-|12    |FDCE       |   178|
-|13    |FDRE       |   111|
-|14    |IBUF       |    17|
-|15    |OBUF       |    16|
-+------+-----------+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    22|
+|3     |LUT1   |    93|
+|4     |LUT2   |   485|
+|5     |LUT3   |   181|
+|6     |LUT4   |   608|
+|7     |LUT5   |   646|
+|8     |LUT6   | 13809|
+|9     |MUXF7  |  4449|
+|10    |MUXF8  |  2185|
+|11    |FDCE   | 33056|
+|12    |FDRE   |   753|
+|13    |IBUF   |    17|
+|14    |OBUF   |    16|
++------+-------+------+
 
 Report Instance Areas: 
 +------+-----------------+----------------+------+
 |      |Instance         |Module          |Cells |
 +------+-----------------+----------------+------+
-|1     |top              |                |  1655|
-|2     |  tsg            |text_screen_gen |  1303|
-|3     |    a_rom        |ascii_rom       |    70|
-|4     |    db_down      |debounce_chu    |    78|
+|1     |top              |                | 56323|
+|2     |  tsg            |text_screen_gen | 54946|
+|3     |    a_rom        |ascii_rom       |   868|
+|4     |    db_down      |debounce_chu    |   174|
 |5     |    db_left      |debounce_chu_4  |    78|
-|6     |    db_right     |debounce_chu_5  |    85|
-|7     |    db_up        |debounce_chu_6  |    81|
-|8     |    dp_ram       |dual_port_ram   |   838|
-|9     |    set_pul      |singlePulser    |    15|
-|10    |  uart1          |uart            |   113|
-|11    |    baudrate_gen |baudrate_gen_1  |    25|
-|12    |    receiver     |uart_rx_2       |    47|
-|13    |    transmitter  |uart_tx_3       |    39|
-|14    |  uart2          |uart_0          |   120|
-|15    |    baudrate_gen |baudrate_gen    |    25|
-|16    |    receiver     |uart_rx         |    45|
-|17    |    transmitter  |uart_tx         |    39|
-|18    |  vga            |vga_controller  |    82|
+|6     |    db_right     |debounce_chu_5  |    82|
+|7     |    db_up        |debounce_chu_6  |   109|
+|8     |    dp_ram       |dual_port_ram   | 48962|
+|9     |    reset_pull   |singlePulser    |     3|
+|10    |    set_pul      |singlePulser_7  |  4500|
+|11    |  uart1          |uart            |  1139|
+|12    |    baudrate_gen |baudrate_gen_1  |    25|
+|13    |    receiver     |uart_rx_2       |  1073|
+|14    |    transmitter  |uart_tx_3       |    39|
+|15    |  uart2          |uart_0          |   124|
+|16    |    baudrate_gen |baudrate_gen    |    25|
+|17    |    receiver     |uart_rx         |    49|
+|18    |    transmitter  |uart_tx         |    39|
+|19    |  vga            |vga_controller  |    77|
 +------+-----------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 972.641 ; gain = 638.797
+Finished Writing Synthesis Report : Time (s): cpu = 00:25:01 ; elapsed = 00:28:12 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 972.641 ; gain = 350.262
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 972.641 ; gain = 638.797
+Synthesis Optimization Runtime : Time (s): cpu = 00:19:36 ; elapsed = 00:27:34 . Memory (MB): peak = 2326.191 ; gain = 1378.887
+Synthesis Optimization Complete : Time (s): cpu = 00:25:01 ; elapsed = 00:28:13 . Memory (MB): peak = 2326.191 ; gain = 1992.996
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 6656 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'dual_port_ram' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 972.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2326.191 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-81 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+279 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 972.641 ; gain = 651.773
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 972.641 ; gain = 0.000
+synth_design: Time (s): cpu = 00:25:10 ; elapsed = 00:28:25 . Memory (MB): peak = 2326.191 ; gain = 2006.184
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2326.191 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.runs/synth_1/top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2326.191 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 06:42:16 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 23:47:12 2024...
