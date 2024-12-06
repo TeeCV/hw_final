@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/ascii_rom.v,1733390638,verilog,,C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/debounce_chu.v,,ascii_rom,,,,,,,,
+C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/debounce_chu.v,1733390697,verilog,,C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/dual_port_ram.v,,debounce_chu,,,,,,,,
+C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/dual_port_ram.v,1733390730,verilog,,C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/text_screen_gen.v,,dual_port_ram,,,,,,,,
+C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/text_screen_gen.v,1733390768,verilog,,C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/vga_controller.v,,text_screen_gen,,,,,,,,
+C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/top.v,1733390813,verilog,,,,top,,,,,,,,
+C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/vga_controller.v,1733390855,verilog,,C:/Users/Chayodom/Desktop/Tee/hw_lab/finalll/finalll.srcs/sources_1/new/top.v,,vga_controller,,,,,,,,

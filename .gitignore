@@ -1,0 +1,20 @@
+# Vivado temporary files
+*.jou
+*.log
+*.str
+*.tmp
+*.wcfg
+*.tcl
+*.pb
+
+# Vivado generated directories
+.Xil/
+.runs/
+.cache/
+.hw/
+.ip_user_files/
+usage_statistics_webtalk/
+
+# Simulation files
+*.wdb
+*.vcd
